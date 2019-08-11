@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap');
+
+#body{
+    font-family: 'Kosugi Maru', sans-serif;
+    background-color: #778899;
+}
+.display-name {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.display-4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.jumbotron {
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+.EnlighterJS, .EnlighterJSWrapper {
+    font-family: "Source Code Pro","Liberation Mono","Courier New",Courier,monospace;
+    font-size: 10px;
+    line-height: 16px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+}
+.single .main ul, .single .main ol {
+    list-style-position: outside;
+    margin-left: 30px;
+}
+.enlighterEnlighterJSWrapper pre, ol.enlighterEnlighterJS, ul.enlighterEnlighterJS {
+    font-size: 11px;
+    color: #939393;
+    border-radius: 8px;
+    border: solid 1px #e0e0e0;
+    background-color: #f9f9f9;
+}
+ol.EnlighterJS, ul.EnlighterJS {
+    display: block;
+    font-size: 10px;
+    background-color: #f2f2f2;
+    color: #939393;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+}
+.EnlighterJS, .EnlighterJSWrapper {
+    font-family: "Source Code Pro","Liberation Mono","Courier New",Courier,monospace;
+    font-size: 10px;
+    line-height: 3.5px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 15;
+    padding: 0;
+}
+i{
+    font-size: 32px;
+}
+i:hover{
+    color: red;
+}
+#timeline {
+    list-style: none;
+    position: relative;
+}
+#timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 2px;
+    background-color: #4997cd;
+    left: 50%;
+    margin-left: -1.5px;
+}
+#timeline .clearFix {
+    clear: both;
+    height: 0;
+}
+#timeline .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #4997cd;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+#timeline .timeline-badge span.timeline-balloon-date-year {
+    font-size: .7em;
+}
+  #timeline .timeline-badge.timeline-filter-movement {
+    background-color: #ffffff;
+    font-size: 1.7em;
+    height: 35px;
+    margin-left: -18px;
+    width: 35px;
+    top: 40px;
+}
+#timeline .timeline-badge.timeline-filter-movement a span {
+    color: #4997cd;
+    font-size: 1.3em;
+    top: -1px;
+}
+#timeline .timeline-badge.timeline-future-movement {
+    background-color: #ffffff;
+    height: 35px;
+    width: 35px;
+    font-size: 1.7em;
+    top: -16px;
+    margin-left: -18px;
+}
+#timeline .timeline-badge.timeline-future-movement a span {
+    color: #4997cd;
+    font-size: .9em;
+    top: 2px;
+    left: 1px;
+}
+#timeline .timeline-movement {
+    border-bottom: dashed 1px #4997cd;
+    position: relative;
+}
+#timeline .timeline-movement.timeline-movement-top {
+    height: 60px;
+}
+#timeline .timeline-movement .timeline-item {
+    padding: 20px 0;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel {
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    color: #666;
+    padding: 10px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul {
+    text-align: right;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li {
+    color: #666;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li span.importo {
+    color: #468c1f;
+    font-size: 1.3em;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul {
+    text-align: left;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul span.importo {
+    color: #e2001a;
+    font-size: 1.3em;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSS SPECIFICITY</title>
+        <link rel="stylesheet" href="Css/myCss.css">
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+    </head>
+    <body id="body">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+                <img src="image/Profile_pic.jpg" alt="GUS" style="width:40px;">
+            </a>
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page2.html">CSS SPECIFICITY</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="jumbotron">
+            <h2 style="color: coral">CSS SPECIFICITY คืออะไร???</h2>
+            <p>CSS Specificity เป็นคอนเซปต์การเลือก CSS Selector ที่มี "ความสำคัญ"
+                เยอะที่สุด มาใช้กับ Element บนหน้าเว็บไซต์ของเรา</p>
+            <p>ภาษา CSS เหมือนภาษาการเขียนโปรแกรมอื่น ๆ ที่อ่านโค้ดจาก บน – ล่าง
+                นั้นหมายความว่าถ้าเขียน CSS Selector ซ้ำกัน 2 อัน
+                อันล่างจะถูกนำไปใช้งานเพราะใหม่กว่า แต่ความพิเศษของ CSS คือ Selector
+                ที่แตกต่างกันแต่ละ Selector จะมี “ความสำคัญ” ที่ไม่เหมือนกัน และเมื่อไหร่ที่
+                “ความสำคัญ” ต่างกัน ลำดับการเขียนโค้ดจะไม่มีผลทันที
+            </p>
+            <p>
+                <strong>HTML:</strong>
+            </p>
+            <div class="EnlighterJSWrapper enlighterEnlighterJSWrapper">
+                <ol class="enlighterEnlighterJS EnlighterJS">
+                    <li class=" odd">
+                        <span>
+                            < class="box" id="redbox"></span>
+                        </li>
+                    </ol>
+                </div>
+                <p>
+                    <strong>CSS:</strong>
+                </p>
+                <div class="EnlighterJSWrapper enlighterEnlighterJSWrapper">
+                    <ol class="enlighterEnlighterJS EnlighterJS">
+                        <li>
+                            <span>.box { background: white; } /* ให้ .box มีพื้นหลังสีขาว*/</span>
+                        </li>
+                        <li>
+                            <span >#redbox { background: red; } /* ให้ #redbox มีพื้นหลังสีแดง*/</span>
+                        </li>
+                    </ol>
+                </div>
+                <p>เราก็จะได้กล่องสีแดงมาแบบนี้</p>
+                <img src="image/redbox.png" alt="redbox">
+                <br>
+                <p>CSS Selector ทั้ง 2 อันของเรามีค่าความสำคัญที่แตกต่างกัน
+                    โดยค่าความสำคัญจะคำนวณจากการใช้ class, ID หรือการซ้อน Element หลาย ๆ ชั้นครับ
+                    ยิ่ง Selector นั้นเจาะจงเท่าไหร่ยิ่งมีค่าความสำคัญเยอะเท่านั้น ทีนี้ก็มาดูกันว่า
+                    CSS Selector ในตัวอย่างมีค่าความสำคัญเท่าไหร่กันบ้าง
+                </p>
+                <p>
+                    <kbd>
+                        .box { }</kbd>
+                    <strong>
+                        มีค่า = 10</strong>
+                </p>
+                <p><kbd>#redbox</kbd><strong> มีค่า = 100</strong></p>
+                <br>
+                <p>เพราะฉะนั้น CSS Property ใน <kbd>#redbox { }</kbd> (ค่าพลัง 100) จะถูกดึงมาแสดงผลทับของ <kbd>.box { }</kbd> (ค่าพลัง 10) เพราะมี ค่าความสำคัญมากกว่า นั่นเอง</p>
+            </div>
+            <hr>
+            <p>Ref : <a href="https://www.w3schools.com/cssref/css_selectors.asp">https://www.w3schools.com/cssref/css_selectors.asp</a></p>
+            <p>Ref : <a href="https://www.designil.com/css-specificity-and-hack.html">https://www.designil.com/css-specificity-and-hack.html</a></p>
+        </div>
+    </body>
+</html>
