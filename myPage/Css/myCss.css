@@ -95,3 +95,6 @@ element.style {
 .fade {
     transition: opacity .15s linear;
 }
+.cv-size{
+    width: 100%;
+}
