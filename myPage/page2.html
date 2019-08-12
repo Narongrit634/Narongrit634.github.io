@@ -51,6 +51,61 @@
                 <h2 style="color: coral">CSS SPECIFICITY คืออะไร???</h2>
                 <p>CSS Specificity เป็นคอนเซปต์การเลือก CSS Selector ที่มี "ความสำคัญ"
                     เยอะที่สุด มาใช้กับ Element บนหน้าเว็บไซต์ของเรา</p>
+                <h3 style="color: #ff6666">แล้ว Selector ของเรามีอะไรบ้างหละ?</h3>
+                <p>Selector ของเราประกอบไปด้วย</p>
+                <li>Element Selector</li>
+                <li>Id Selector</li>
+                <li>Class Selector</li>
+                <br>
+                <div class="d-flex justify-content-around">
+                    <div class="p-2">
+                        <h5><strong>Element Selector</strong></h5>
+                        <p>ก็คือ tag HTML ทั้งหลายนั้นแหละ โดยเราให้ค่าเท่ากับ 1 เช่น tag p ที่เป็น paragraph ตัวอย่างเช่น</p>
+                        <pre id="styleDIV">
+                            p { 
+                                color: red;
+                                font-size: 2.4em; 
+                            }
+                        </pre>
+                        <p>Selector ใน block ข้างบนจะหมายความว่า ทุกๆ tag p ของเราจะ
+                            จะเป็นสีแดงและมีขนาดของ font เท่ากับ 2.4em
+                        </p>
+                    </div>
+                    <div class="p-2">
+                        <h5><strong>Id Selector</strong></h5>
+                        <p>คือการเลือก element เราให้พิเศษมากขึ้น เช่นต้องการให้ tag p เป็นสีอื่น เราจะเขียนเริ่มต้นด้วย # โดยเราให้ค่าเท่ากับ 100</p>
+                        <p>การเขียน ID จะต้อง</p>
+                        <li>ไม่เริ่มด้วยตัวเลข</li>
+                        <li>ชื่อ id จะต้องไม่ซ้ำกับ id อื่นใน page เดียวกัน</li>
+                        <li>id selector ของเราจะกับ element แต่ละตัวเท่านั้น</li>
+                        <pre id="styleDIV">
+                                #alert-center {
+                                    color: red;
+                                    text-align: center;
+                                }
+                        </pre>
+                    </div>
+                    <div class="p-2">
+                        <h5><strong>Class Selector</strong></h5>
+                        <p>คือการเลือก element เราให้พิเศษมากขึ้น เราจะเขียนเริ่มต้นด้วย .(จุด) โดยเราให้ค่า = 10</p> 
+                        <pre id="styleDIV">
+                                .center { 
+                                    text-align: center; 
+                                 }
+                        </pre>
+                    </div>
+                </div>
+                <h5><strong>Grouping Selector</strong></h5>
+                <p>นอกจาก Selector 3 แบบข้างบนแล้วยังมีอีกแบบนึงคือการ Group หรือรวมกลุ่มกันสำหรับ element ที่มี
+                    คุณสมบัติเหมือนกันกัน เช่น
+                </p>
+                <pre id="styleDIV">
+                        h1, h2, h3{
+                            color: red;
+                        }
+                </pre>
+                <p>หมายความว่า tag h1, h2, h3 จะมีสีแดงเหมือนกันนั้นเอง</p>
+                <br>
                 <p>ภาษา CSS เหมือนภาษาการเขียนโปรแกรมอื่น ๆ ที่อ่านโค้ดจาก บน – ล่าง
                     นั้นหมายความว่าถ้าเขียน CSS Selector ซ้ำกัน 2 อัน
                     อันล่างจะถูกนำไปใช้งานเพราะใหม่กว่า แต่ความพิเศษของ CSS คือ Selector
@@ -60,28 +115,16 @@
                 <p>
                     <strong>HTML:</strong>
                 </p>
-                <div class="EnlighterJSWrapper enlighterEnlighterJSWrapper">
-                    <ol class="enlighterEnlighterJS EnlighterJS">
-                        <li class=" odd">
-                            <span>
-                                < class="box" id="redbox"></span>
-                            </li>
-                        </ol>
-                    </div>
-                    <p>
-                        <strong>CSS:</strong>
-                    </p>
-                    <div class="EnlighterJSWrapper enlighterEnlighterJSWrapper">
-                        <ol class="enlighterEnlighterJS EnlighterJS">
-                            <li>
-                                <span>.box { background: white; } /* ให้ .box มีพื้นหลังสีขาว*/</span>
-                            </li>
-                            <li>
-                                <span >#redbox { background: red; } /* ให้ #redbox มีพื้นหลังสีแดง*/</span>
-                            </li>
-                        </ol>
-                    </div>
-                    <p>เราก็จะได้กล่องสีแดงมาแบบนี้</p>
+                <pre id="styleDIV">
+                    < class="box" id="redbox">
+                </pre>
+                <p>
+                    <strong>CSS:</strong>
+                </p>
+                <pre id="styleDIV">                     .box { background: white; } /* ให้ .box มีพื้นหลังสีขาว*/
+                    #redbox { background: red; } /* ให้ #redbox มีพื้นหลังสีแดง*/
+                </pre>
+                    <p><strong>เราก็จะได้พื่นหลังสีแดงมาแบบนี้</strong></p>
                     <img src="image/redbox.png" alt="redbox">
                     <br>
                     <p>CSS Selector ทั้ง 2 อันของเรามีค่าความสำคัญที่แตกต่างกัน
@@ -103,16 +146,16 @@
                     <br>
                     <p>เพราะฉะนั้น CSS Property ใน
                         <kbd>#redbox { }</kbd>
-                        (ค่าพลัง 100) จะถูกดึงมาแสดงผลทับของ
+                        (ค่า 100) จะถูกดึงมาแสดงผลทับของ
                         <kbd>.box { }</kbd>
-                        (ค่าพลัง 10) เพราะมี ค่าความสำคัญมากกว่า นั่นเอง</p>
+                        (ค่า 10) เพราะมี ค่าความสำคัญมากกว่า นั่นเอง</p>
                 </div>
                 <hr>
                 <p>Ref :
-                    <a href="https://www.w3schools.com/cssref/css_selectors.asp">https://www.w3schools.com/cssref/css_selectors.asp</a>
+                    <a href="https://www.w3schools.com/cssref/css_selectors.asp"><kbd>https://www.w3schools.com/cssref/css_selectors.asp/</kbd></a>
                 </p>
                 <p>Ref :
-                    <a href="https://www.designil.com/css-specificity-and-hack.html">https://www.designil.com/css-specificity-and-hack.html</a>
+                    <a href="https://www.designil.com/css-specificity-and-hack.html"><kbd>https://www.designil.com/css-specificity-and-hack.html</kbd></a>
                 </p>
             </div>
         </body>
