@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Athiti&display=swap');
 
 #body{
-    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'Athiti', sans-serif;
     background-color: #778899;
 }
 .display-name {
@@ -20,52 +20,18 @@
     font-weight: 500;
     line-height: 1.2;
 }
+h5 {
+    color: #000080;
+}
 .jumbotron {
     padding: 1rem 2rem;
     margin-bottom: 2rem;
     background-color: #e9ecef;
     border-radius: .3rem;
 }
-.EnlighterJS, .EnlighterJSWrapper {
-    font-family: "Source Code Pro","Liberation Mono","Courier New",Courier,monospace;
-    font-size: 10px;
-    line-height: 16px;
-    overflow: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    margin: 0;
-    padding: 0;
-}
 .single .main ul, .single .main ol {
     list-style-position: outside;
     margin-left: 30px;
-}
-.enlighterEnlighterJSWrapper pre, ol.enlighterEnlighterJS, ul.enlighterEnlighterJS {
-    font-size: 11px;
-    color: #939393;
-    border-radius: 8px;
-    border: solid 1px #e0e0e0;
-    background-color: #f9f9f9;
-}
-ol.EnlighterJS, ul.EnlighterJS {
-    display: block;
-    font-size: 10px;
-    background-color: #f2f2f2;
-    color: #939393;
-    margin: 0 0 20px 0;
-    padding: 0;
-    text-indent: 0;
-    list-style: none;
-}
-.EnlighterJS, .EnlighterJSWrapper {
-    font-family: "Source Code Pro","Liberation Mono","Courier New",Courier,monospace;
-    font-size: 10px;
-    line-height: 3.5px;
-    overflow: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    margin: 15;
-    padding: 0;
 }
 i{
     font-size: 32px;
@@ -97,4 +63,23 @@ element.style {
 }
 .cv-size{
     width: 100%;
+}
+#styleDIV {
+    font-family: 'Athiti', sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 15px;
+    background-color: #C0C0C0;
+    padding: 10px;
+    color: #222222;
+    text-align: left;
+}
+pre {
+    display: block;
+    font-family: 'Athiti', sans-serif;
+    white-space: pre;
+    margin: 1em 0px;
+}
+kbd {
+    background: linear-gradient(to right,#fce4ed,#ffe8cc);
 }
